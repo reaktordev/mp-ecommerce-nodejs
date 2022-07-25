@@ -42,7 +42,7 @@ app.post('/notifications', function (req, res, next) {
         console.log("Id: "+ paymentId);
     }
 
-    res.sendStatus(201);
+    res.status(200).send({succes: 'ok'});
 });
 
 app.post('/payment_init', function(req, res){
