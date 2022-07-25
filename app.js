@@ -37,7 +37,7 @@ app.post('/notifications', function (req, res, next) {
    
     console.log(req.body);
 
-    let paymentId = req.body.data.id;
+    let paymentId = req.body.id;
     if(paymentId){
         console.log("Id: "+ paymentId);
     }
