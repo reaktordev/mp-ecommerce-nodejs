@@ -114,6 +114,7 @@ app.get('/pending', function (req, res) {
     res.render('feedback', req.query);
 });
 app.get('/aproved', function (req, res) {
+    console.log(req.body);
     res.render('feedback', req.query);
 });
 
